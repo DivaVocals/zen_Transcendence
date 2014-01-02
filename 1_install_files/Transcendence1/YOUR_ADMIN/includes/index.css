@@ -1,0 +1,90 @@
+/**
+ * @package admin
+ * @ignore
+ * @access private
+ * @copyright Copyright 2003-2006 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: index.css 5454 2006-12-29 20:10:17Z drbyte $
+ */
+div.clearBoth{
+clear:both;
+margin-top:20px;
+}
+div.copyrightrow{
+background:#ffffff;
+clear:both;
+font-size:9px;
+padding:25px;
+text-align:center;
+}
+div.header{
+clear:both;
+color:#ffffff;
+font-weight:bold;
+padding:3px;
+background: #fcdbdc; /* Old browsers */
+background: -moz-linear-gradient(top,  #fcdbdc 0%, #ff9999 35%, #fc5558 67%, #ed1c24 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcdbdc), color-stop(35%,#ff9999), color-stop(67%,#fc5558), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fcdbdc 0%,#ff9999 35%,#fc5558 67%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fcdbdc 0%,#ff9999 35%,#fc5558 67%,#ed1c24 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fcdbdc 0%,#ff9999 35%,#fc5558 67%,#ed1c24 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fcdbdc 0%,#ff9999 35%,#fc5558 67%,#ed1c24 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcdbdc', endColorstr='#ed1c24',GradientType=0 ); /* IE6-9 */
+-moz-border-radius: .5em .5em 0 0;
+-webkit-border-radius: .5em .5em 0 0;
+border-radius: .5em .5em 0 0;
+border:1px solid #ed1c24;
+}
+div.header a{
+/*color:#ffffff;*/
+font-weight:bold;
+}
+div.reportBox{
+/*background:#d7d6cc;*/
+background-color:#ed1c24;
+-moz-border-radius: .5em .5em 0 0;
+-webkit-border-radius: .5em .5em 0 0;
+border-radius: .5em .5em 0 0;
+/*border:1px solid #d7d6cc;*/
+border:1px solid #ed1c24;
+margin-top:1em;
+}
+div.row{
+background:#f7f6ef;
+clear:both;
+margin-top:1px;
+padding:3px;
+}
+div.row span.center{
+margin-right:30px;
+}
+div.row span.left{
+float:left;
+text-align:left;
+width:74%;
+}
+div.row span.right{
+float:right;
+text-align:right;
+width:34%;
+}
+div.warrantyrow{
+background:#ffffff;
+clear:both;
+font-size:9px;
+text-align:center;
+}
+#colone,#coltwo,#colthree{
+display:inline;
+float:left;
+padding-top:.25em;
+width:32%;
+}
+#colone{
+margin-left:5px;
+}
+#coltwo,#colthree{
+margin-left:28px;
+}
+

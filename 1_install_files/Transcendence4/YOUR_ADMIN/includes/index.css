@@ -1,0 +1,90 @@
+/**
+ * @package admin
+ * @ignore
+ * @access private
+ * @copyright Copyright 2003-2006 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: index.css 5454 2006-12-29 20:10:17Z drbyte $
+ */
+div.clearBoth{
+clear:both;
+margin-top:20px;
+}
+div.copyrightrow{
+background:#ffffff;
+clear:both;
+font-size:9px;
+padding:25px;
+text-align:center;
+}
+div.header{
+clear:both;
+color:#333;
+font-weight:bold;
+padding:3px;
+background: #f4bc02; /* Old browsers */
+background: -moz-linear-gradient(top, #f4bc02 0%, #f6df8f 23%, #f8e299 31%, #f6e299 33%, #f7e4a0 36%, #f7e4a0 38%, #fbeec2 58%, #faeec6 59%, #fdf4d7 70%, #fcf6de 73%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4bc02), color-stop(23%,#f6df8f), color-stop(31%,#f8e299), color-stop(33%,#f6e299), color-stop(36%,#f7e4a0), color-stop(38%,#f7e4a0), color-stop(58%,#fbeec2), color-stop(59%,#faeec6), color-stop(70%,#fdf4d7), color-stop(73%,#fcf6de)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f4bc02 0%,#f6df8f 23%,#f8e299 31%,#f6e299 33%,#f7e4a0 36%,#f7e4a0 38%,#fbeec2 58%,#faeec6 59%,#fdf4d7 70%,#fcf6de 73%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f4bc02 0%,#f6df8f 23%,#f8e299 31%,#f6e299 33%,#f7e4a0 36%,#f7e4a0 38%,#fbeec2 58%,#faeec6 59%,#fdf4d7 70%,#fcf6de 73%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f4bc02 0%,#f6df8f 23%,#f8e299 31%,#f6e299 33%,#f7e4a0 36%,#f7e4a0 38%,#fbeec2 58%,#faeec6 59%,#fdf4d7 70%,#fcf6de 73%); /* IE10+ */
+background: linear-gradient(to bottom, #f4bc02 0%,#f6df8f 23%,#f8e299 31%,#f6e299 33%,#f7e4a0 36%,#f7e4a0 38%,#fbeec2 58%,#faeec6 59%,#fdf4d7 70%,#fcf6de 73%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4bc02', endColorstr='#fcf6de',GradientType=0 ); /* IE6-9 */-moz-border-radius: .5em .5em 0 0;
+-moz-border-radius: .5em .5em 0 0;
+-webkit-border-radius: .5em .5em 0 0;
+border-radius: .5em .5em 0 0;
+border:1px solid #f4bc02;
+}
+div.header a{
+/*color:#ffffff;*/
+font-weight:bold;
+}
+div.reportBox{
+/*background:#d7d6cc;*/
+background-color:#f4bc02;
+-moz-border-radius: .5em .5em 0 0;
+-webkit-border-radius: .5em .5em 0 0;
+border-radius: .5em .5em 0 0;
+/*border:1px solid #d7d6cc;*/
+border:1px solid #f4bc02;
+margin-top:1em;
+}
+div.row{
+background:#f7f6ef;
+clear:both;
+margin-top:1px;
+padding:3px;
+}
+div.row span.center{
+margin-right:30px;
+}
+div.row span.left{
+float:left;
+text-align:left;
+width:74%;
+}
+div.row span.right{
+float:right;
+text-align:right;
+width:34%;
+}
+div.warrantyrow{
+background:#ffffff;
+clear:both;
+font-size:9px;
+text-align:center;
+}
+#colone,#coltwo,#colthree{
+display:inline;
+float:left;
+padding-top:.25em;
+width:32%;
+}
+#colone{
+margin-left:5px;
+}
+#coltwo,#colthree{
+margin-left:28px;
+}
+

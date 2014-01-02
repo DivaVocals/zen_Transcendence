@@ -1,0 +1,458 @@
+/**
+ * @package admin
+ * @ignore
+ * @access private
+ * @copyright Copyright 2003-2011 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: stylesheet.css 19301 2011-07-28 21:50:05Z kuroi $
+ */
+/* Main background colors - #31c9fb, #68ce85, & #339900 */
+@import url("menu.css");/* including stylesheet for dhtml menu */
+@import url("index.css");/* including stylesheet for index.php */
+@import url("stylesheet_admin_css_buttons.css");
+a{
+color:#0000ff;
+text-decoration:none;
+}
+a.contentlink, span.left a, td.infoBoxContent a, td.smallText a, td.dataTableContent a, div.warrantyrow a{
+color:#0000ff;
+}
+a,body,html,table{
+font:normal normal 0.95em Verdana,sans-serif;
+}
+a:hover{
+color:#0000ff;
+text-decoration:underline;
+}
+a.headerLink:link{
+color:#ffffff;
+font-weight:bold;
+text-decoration:none;
+}
+a.headerLink:visited{
+color:#ffffff;
+font-weight:bold;
+text-decoration:none;
+}
+a.headerLink:hover{
+color:#ffffff;
+font-weight:bold;
+text-decoration:underline;
+}
+a.headerLink:active{
+color:#ffffff;
+font-weight:bold;
+text-decoration:none;
+}
+a.menuBoxContentLink:link, td.main a:link{
+color:#0000ff;
+text-decoration:none;
+}
+a.menuBoxContentLink:visited{
+color:#0000ff;
+text-decoration:none;
+}
+a.menuBoxContentLink:hover, td.main a:hover{
+color:#0000ff;
+text-decoration:underline;
+}
+a.menuBoxContentLink:active{
+color:#0000ff;
+text-decoration:none;
+}
+a.menuBoxHeadingLink:link{
+color:#0000ff;
+font-weight:bold;
+text-decoration:none;
+}
+a.menuBoxHeadingLink:visited{
+color:#0000ff;
+font-weight:bold;
+text-decoration:none;
+}
+a.menuBoxHeadingLink:hover{
+color:#0000ff;
+font-weight:bold;
+text-decoration:none;
+}
+a.menuBoxHeadingLink:active{
+color:#0000ff;
+font-weight:bold;
+text-decoration:none;
+}
+a.splitPageLink:link{
+color:#0000ff;
+text-decoration:none;
+}
+a.splitPageLink:visited{
+color:#0000ff;
+text-decoration:none;
+}
+a.splitPageLink:hover{
+background-color:#ffff33;
+color:#0000ff;
+text-decoration:underline;
+}
+a.splitPageLink:active{
+color:#0000ff;
+text-decoration:none;
+}
+
+body{
+background-color:#ffffff;
+color:#333333;
+margin:0;
+}
+.clearBoth {
+	clear: both;
+	}
+
+/* <<<<<<<<<<<<<<<<< BEGIN LOGIN >>>>>>>>>>>>>>>>>>>> */
+body#login{
+margin-top:100px;
+text-align:center;
+}
+
+body#login .button{
+cursor:pointer;
+padding: 3px;
+margin-top: 10px;
+}
+
+body#login fieldset{
+margin:0 auto;
+padding:30px;
+width:600px;
+background: #31c9fb; /* Old browsers */
+background: -moz-linear-gradient(top,  #31c9fb 0%, #33cbfd 1%, #2cc4f6 2%, #32cafc 3%, #32cafc 4%, #2ec6f8 4%, #34ccfe 5%, #2ec6f8 7%, #34ccfe 8%, #2dc5f7 9%, #2ec6f8 9%, #35cdff 10%, #35cdff 11%, #2ec6f8 12%, #2dc5f7 12%, #35cdff 13%, #2ec6f8 14%, #34ccfe 15%, #2dc5f7 16%, #33c9fc 17%, #30c6f9 19%, #35cbfe 22%, #31c7fa 24%, #35cbfe 25%, #31c9fb 26%, #34ccfe 27%, #31c9fb 29%, #34ccfe 30%, #30c8fa 31%, #34ccfe 32%, #31c9fb 34%, #37cbfb 34%, #33c6f9 35%, #38cbf7 37%, #35c9f1 38%, #36c8f1 38%, #3accf3 39%, #38c8ea 40%, #3ccdec 41%, #3cccee 41%, #38c8ea 42%, #3ec9e8 43%, #3fcae1 46%, #41cadd 47%, #44ccd8 51%, #45cbd4 51%, #46cbd4 53%, #4ccbc4 57%, #4fcbc0 61%, #54ccb1 66%, #54ccb1 68%, #56ccac 68%, #56cbae 69%, #5dcd9d 75%, #5dcd9f 76%, #5fcb97 77%, #60cc98 78%, #64ce8e 81%, #65ce89 85%, #68ce85 85%, #69ce80 88%, #6bcf75 91%, #6ccf75 93%, #6bd16e 94%, #73cb75 95%, #73cb77 96%, #6ecf72 97%, #6ed36d 98%, #6cd16b 99%, #76cb78 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#31c9fb), color-stop(1%,#33cbfd), color-stop(2%,#2cc4f6), color-stop(3%,#32cafc), color-stop(4%,#32cafc), color-stop(4%,#2ec6f8), color-stop(5%,#34ccfe), color-stop(7%,#2ec6f8), color-stop(8%,#34ccfe), color-stop(9%,#2dc5f7), color-stop(9%,#2ec6f8), color-stop(10%,#35cdff), color-stop(11%,#35cdff), color-stop(12%,#2ec6f8), color-stop(12%,#2dc5f7), color-stop(13%,#35cdff), color-stop(14%,#2ec6f8), color-stop(15%,#34ccfe), color-stop(16%,#2dc5f7), color-stop(17%,#33c9fc), color-stop(19%,#30c6f9), color-stop(22%,#35cbfe), color-stop(24%,#31c7fa), color-stop(25%,#35cbfe), color-stop(26%,#31c9fb), color-stop(27%,#34ccfe), color-stop(29%,#31c9fb), color-stop(30%,#34ccfe), color-stop(31%,#30c8fa), color-stop(32%,#34ccfe), color-stop(34%,#31c9fb), color-stop(34%,#37cbfb), color-stop(35%,#33c6f9), color-stop(37%,#38cbf7), color-stop(38%,#35c9f1), color-stop(38%,#36c8f1), color-stop(39%,#3accf3), color-stop(40%,#38c8ea), color-stop(41%,#3ccdec), color-stop(41%,#3cccee), color-stop(42%,#38c8ea), color-stop(43%,#3ec9e8), color-stop(46%,#3fcae1), color-stop(47%,#41cadd), color-stop(51%,#44ccd8), color-stop(51%,#45cbd4), color-stop(53%,#46cbd4), color-stop(57%,#4ccbc4), color-stop(61%,#4fcbc0), color-stop(66%,#54ccb1), color-stop(68%,#54ccb1), color-stop(68%,#56ccac), color-stop(69%,#56cbae), color-stop(75%,#5dcd9d), color-stop(76%,#5dcd9f), color-stop(77%,#5fcb97), color-stop(78%,#60cc98), color-stop(81%,#64ce8e), color-stop(85%,#65ce89), color-stop(85%,#68ce85), color-stop(88%,#69ce80), color-stop(91%,#6bcf75), color-stop(93%,#6ccf75), color-stop(94%,#6bd16e), color-stop(95%,#73cb75), color-stop(96%,#73cb77), color-stop(97%,#6ecf72), color-stop(98%,#6ed36d), color-stop(99%,#6cd16b), color-stop(100%,#76cb78)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #31c9fb 0%,#33cbfd 1%,#2cc4f6 2%,#32cafc 3%,#32cafc 4%,#2ec6f8 4%,#34ccfe 5%,#2ec6f8 7%,#34ccfe 8%,#2dc5f7 9%,#2ec6f8 9%,#35cdff 10%,#35cdff 11%,#2ec6f8 12%,#2dc5f7 12%,#35cdff 13%,#2ec6f8 14%,#34ccfe 15%,#2dc5f7 16%,#33c9fc 17%,#30c6f9 19%,#35cbfe 22%,#31c7fa 24%,#35cbfe 25%,#31c9fb 26%,#34ccfe 27%,#31c9fb 29%,#34ccfe 30%,#30c8fa 31%,#34ccfe 32%,#31c9fb 34%,#37cbfb 34%,#33c6f9 35%,#38cbf7 37%,#35c9f1 38%,#36c8f1 38%,#3accf3 39%,#38c8ea 40%,#3ccdec 41%,#3cccee 41%,#38c8ea 42%,#3ec9e8 43%,#3fcae1 46%,#41cadd 47%,#44ccd8 51%,#45cbd4 51%,#46cbd4 53%,#4ccbc4 57%,#4fcbc0 61%,#54ccb1 66%,#54ccb1 68%,#56ccac 68%,#56cbae 69%,#5dcd9d 75%,#5dcd9f 76%,#5fcb97 77%,#60cc98 78%,#64ce8e 81%,#65ce89 85%,#68ce85 85%,#69ce80 88%,#6bcf75 91%,#6ccf75 93%,#6bd16e 94%,#73cb75 95%,#73cb77 96%,#6ecf72 97%,#6ed36d 98%,#6cd16b 99%,#76cb78 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #31c9fb 0%,#33cbfd 1%,#2cc4f6 2%,#32cafc 3%,#32cafc 4%,#2ec6f8 4%,#34ccfe 5%,#2ec6f8 7%,#34ccfe 8%,#2dc5f7 9%,#2ec6f8 9%,#35cdff 10%,#35cdff 11%,#2ec6f8 12%,#2dc5f7 12%,#35cdff 13%,#2ec6f8 14%,#34ccfe 15%,#2dc5f7 16%,#33c9fc 17%,#30c6f9 19%,#35cbfe 22%,#31c7fa 24%,#35cbfe 25%,#31c9fb 26%,#34ccfe 27%,#31c9fb 29%,#34ccfe 30%,#30c8fa 31%,#34ccfe 32%,#31c9fb 34%,#37cbfb 34%,#33c6f9 35%,#38cbf7 37%,#35c9f1 38%,#36c8f1 38%,#3accf3 39%,#38c8ea 40%,#3ccdec 41%,#3cccee 41%,#38c8ea 42%,#3ec9e8 43%,#3fcae1 46%,#41cadd 47%,#44ccd8 51%,#45cbd4 51%,#46cbd4 53%,#4ccbc4 57%,#4fcbc0 61%,#54ccb1 66%,#54ccb1 68%,#56ccac 68%,#56cbae 69%,#5dcd9d 75%,#5dcd9f 76%,#5fcb97 77%,#60cc98 78%,#64ce8e 81%,#65ce89 85%,#68ce85 85%,#69ce80 88%,#6bcf75 91%,#6ccf75 93%,#6bd16e 94%,#73cb75 95%,#73cb77 96%,#6ecf72 97%,#6ed36d 98%,#6cd16b 99%,#76cb78 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #31c9fb 0%,#33cbfd 1%,#2cc4f6 2%,#32cafc 3%,#32cafc 4%,#2ec6f8 4%,#34ccfe 5%,#2ec6f8 7%,#34ccfe 8%,#2dc5f7 9%,#2ec6f8 9%,#35cdff 10%,#35cdff 11%,#2ec6f8 12%,#2dc5f7 12%,#35cdff 13%,#2ec6f8 14%,#34ccfe 15%,#2dc5f7 16%,#33c9fc 17%,#30c6f9 19%,#35cbfe 22%,#31c7fa 24%,#35cbfe 25%,#31c9fb 26%,#34ccfe 27%,#31c9fb 29%,#34ccfe 30%,#30c8fa 31%,#34ccfe 32%,#31c9fb 34%,#37cbfb 34%,#33c6f9 35%,#38cbf7 37%,#35c9f1 38%,#36c8f1 38%,#3accf3 39%,#38c8ea 40%,#3ccdec 41%,#3cccee 41%,#38c8ea 42%,#3ec9e8 43%,#3fcae1 46%,#41cadd 47%,#44ccd8 51%,#45cbd4 51%,#46cbd4 53%,#4ccbc4 57%,#4fcbc0 61%,#54ccb1 66%,#54ccb1 68%,#56ccac 68%,#56cbae 69%,#5dcd9d 75%,#5dcd9f 76%,#5fcb97 77%,#60cc98 78%,#64ce8e 81%,#65ce89 85%,#68ce85 85%,#69ce80 88%,#6bcf75 91%,#6ccf75 93%,#6bd16e 94%,#73cb75 95%,#73cb77 96%,#6ecf72 97%,#6ed36d 98%,#6cd16b 99%,#76cb78 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #31c9fb 0%,#33cbfd 1%,#2cc4f6 2%,#32cafc 3%,#32cafc 4%,#2ec6f8 4%,#34ccfe 5%,#2ec6f8 7%,#34ccfe 8%,#2dc5f7 9%,#2ec6f8 9%,#35cdff 10%,#35cdff 11%,#2ec6f8 12%,#2dc5f7 12%,#35cdff 13%,#2ec6f8 14%,#34ccfe 15%,#2dc5f7 16%,#33c9fc 17%,#30c6f9 19%,#35cbfe 22%,#31c7fa 24%,#35cbfe 25%,#31c9fb 26%,#34ccfe 27%,#31c9fb 29%,#34ccfe 30%,#30c8fa 31%,#34ccfe 32%,#31c9fb 34%,#37cbfb 34%,#33c6f9 35%,#38cbf7 37%,#35c9f1 38%,#36c8f1 38%,#3accf3 39%,#38c8ea 40%,#3ccdec 41%,#3cccee 41%,#38c8ea 42%,#3ec9e8 43%,#3fcae1 46%,#41cadd 47%,#44ccd8 51%,#45cbd4 51%,#46cbd4 53%,#4ccbc4 57%,#4fcbc0 61%,#54ccb1 66%,#54ccb1 68%,#56ccac 68%,#56cbae 69%,#5dcd9d 75%,#5dcd9f 76%,#5fcb97 77%,#60cc98 78%,#64ce8e 81%,#65ce89 85%,#68ce85 85%,#69ce80 88%,#6bcf75 91%,#6ccf75 93%,#6bd16e 94%,#73cb75 95%,#73cb77 96%,#6ecf72 97%,#6ed36d 98%,#6cd16b 99%,#76cb78 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31c9fb', endColorstr='#76cb78',GradientType=0 ); /* IE6-9 */
+-moz-border-radius: .5em 4em .5em 4em;
+-webkit-border-radius: .5em 4em .5em 4em;
+border-radius: .5em 4em .5em 4em;
+border:0px solid #fff;
+}
+
+.loginLabel {
+	/*margin-left: 60px;*/
+	margin-right: 5px;
+	width: 180px;
+	float: left;
+	text-align: right;
+	line-height: 1.5;
+	font-weight: bold;
+}
+
+body#login legend{
+background:#68ce85;
+border:1px solid #9a9a9a;
+color:#000;
+font-size:90%;
+padding:0.2em 0.5em;
+text-align:right;
+-moz-border-radius: .5em;
+-webkit-border-radius: .5em;
+border-radius: .5em;
+}
+
+input#admin_name, input#admin_pass, input#old_pwd, input#admin_pass2, input#admin_email {
+font-size:1.5em;
+}
+#admin_name, #admin_pass, #old_pwd, #admin_pass2, #admin_email {
+width: 45%;
+}
+/* <<<<<<<<<<<<<<<<< END LOGIN >>>>>>>>>>>>>>>>>>>> */
+
+checkbox,input,radio,select,textarea,file{
+font-size:11px;
+}
+textarea {
+width: 80%;
+}
+/* to handle textareas for browsers which don't like % widths */
+textarea.sqlpatchKeyedQuery, TEXTAREA#file_contents {
+width:auto;
+}
+form{
+display:inline;
+}
+
+/* <<<<<<<<<<<<<<<<< CSS Buttons >>>>>>>>>>>>>>>>>>>> */
+/*.button, input.button, input[type=button] {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+	display:inline-block;
+	font-family:Verdana, Helvetica, Tahoma, Arial, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	margin: 0;
+	padding:2px 8px;
+	text-decoration:none;
+}
+.button, input.button, input[type=button] {
+	background-color:#E8E8E8;  /* Submit button background color */
+	border: 1px solid #B7B7B7;  /* Submit button border color */
+	font-size: 12px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0;
+	padding:2px 8px;
+	color: #333;  /* Text color for submit buttons */
+}
+.button:hover, input.button:hover, input[type=button]:hover {
+	background-color:#cdd1d4;  /* Hover color for the submit buttons */
+	border: 1px solid #B7B7B7;  /* Submit button border color */
+	color:#333;  /* Text color for the submit buttons */
+	cursor: pointer;
+}*/
+/* <<<<<<<<<<<<<<<<< END >>>>>>>>>>>>>>>>>>>> */
+
+span.dataTableHeadingContentWhois{
+color:#ff6600;
+font-weight:bold;
+}
+span.normalprice{
+text-decoration:line-through;
+}
+span.productPriceDiscount,.inputRequirement{
+color:#ff0000;
+}
+span.productSpecialPrice,span.productSalePrice,.stockWarning,span.coming{
+color:#ff0000;
+}
+span.productSpecialPriceSale{
+color:#ff0000;
+text-decoration:line-through;
+}
+span.SortOrderHeader{
+color:#ff6600;
+font-weight:bold;
+}
+span.SortOrderHeaderLink{
+color:#0000ff;
+font-weight:bold;
+}
+td.alert,span.alert{
+color:#ff0000;
+font-weight:bold;
+}
+td.attributeBoxContent{
+background-color:#dcdbd1;
+color:#333333;
+}
+td.ot-subtotal-Amount,td.ot-cod-fee-Amount,td.ot-group-pricing-Amount,td.ot-gv-Amount,td.ot-loworderfee-Amount,td.ot-shipping-Amount,td.ot-subtotal-Amount,td.ot-tax-Amount,td.ot-coupon-Amount{
+}
+td.ot-subtotal-Text,td.ot-cod-fee-Text,td.ot-total-Text,td.ot-group-pricing-Text,td.ot-gv-Text,td.ot-loworderfee-Text,td.ot-shipping-Text,td.ot-subtotal-Text,td.ot-tax-Text,td.ot-coupon-Text{
+font-weight:bold;
+}
+td.ot-total-Amount{
+border-top:1px solid #9a9a9a;
+font-weight:bold;
+}
+tr.attributeBoxContent{
+background-color:#dcdbd1;
+color:#333333;
+}
+.attributeBoxContent{
+background-color:#dcdbd1;
+color:#333333;
+}
+.attributes-even{
+background-color:#ffffff;
+}
+.attributes-odd{
+background-color:#f7f6ef;
+}
+.columnLeft{
+background-color:#f2f1ee;
+border-color:#999999;
+border-style:solid;
+border-width:1px;
+padding:2px;
+}
+.dataTableContent{
+color:#333333;
+}
+.dataTableContentBot{
+color:#333333;
+}
+.dataTableContentWhois{
+color:#333333;
+}
+.dataTableHeadingContent{
+color:#333333;
+font-weight:bold;
+}
+.dataTableHeadingContentWhois{
+color:#333333;
+font-weight:bold;
+}
+.dataTableHeadingContentWhois a:link,.dataTableHeadingContentWhois a:visited{
+color:#0000ff;
+font-weight:bold;
+}
+.dataTableHeadingContentWhois a:hover{
+color:#ffffff;
+font-weight:bold;
+}
+.dataTableHeadingRow{
+background-color:#d7d6cc;
+}
+.dataTableHeadingRowWhois{
+background-color:#d7d6cc;
+}
+.dataTableRow{
+background-color:#f2f1ee;
+}
+.dataTableRowBot{
+background-color:#facbfa;
+}
+.dataTableRowOver{
+background-color:#ffffff;
+cursor:pointer;
+cursor:hand;
+}
+.dataTableRowOverBot{
+background-color:#ffffff;
+}
+.dataTableRowOverWhois{
+background-color:#ffffff;
+}
+.dataTableRowSelected{
+background-color:#e7e6e0;
+}
+.dataTableRowSelectedBot{
+background-color:#ff93ff;
+}
+.dataTableRowSelectedWhois{
+background-color:#dee4e8;
+}
+.dataTableRowSpacer,td.dataTableRowSpacer,TR.dataTableRowSpacer{
+background-color:#d7d6cc;
+color:#ff6600;
+font-size:11px;
+font-weight:bold;
+line-height:1.0;
+}
+.dataTableRowWhois{
+background-color:#f2f1ee;
+}
+.errorText{
+color:#ff0000;
+}
+.fieldRequired{
+color:#ff0000;
+}
+.formArea{
+background-color:#f1f9fe;
+border-color:#7b9ebd;
+border-style:solid;
+border-width:1px;
+}
+.formAreaTitle{
+font-family:Tahoma,Verdana,Arial,sans-serif;
+font-size:12px;
+font-weight:bold;
+}
+.headerBar{
+/*background-color:#003D00;*/
+background-color:#339900;
+}
+.headerBarContent{
+color:#ffffff;
+font-weight:bold;
+padding:2px;
+}
+.infoBoxContent{
+background-color:#e7e6e0;
+color:#333333;
+}
+.infoBoxHeading{
+/*background-color:#003D00;*/
+background-color:339900;
+color:#ffffff;
+}
+.main{
+}
+.menuBoxContent{
+color:#616060;
+}
+.menuBoxHeading{
+background-color:#ffffff;
+color:#616060;
+}
+.messageBox{
+}
+.messageStackCaution{
+background-color:#ffff00;
+}
+.messageStackError,.messageStackWarning{
+background-color:#ffb3b5;
+}
+.messageStackSuccess{
+background-color:#d4ffbd;
+}
+.oldPrice{
+text-decoration:line-through;
+}
+h1,.pageHeading{
+/*color:#003D00;*/ /*727272*/
+color:#339900;
+font-size:16px;
+font-variant:small-caps;
+font-weight:bold;
+}
+.SaleMakerDisabled{
+background-color:#f0f1f1;
+}
+.SaleMakerOver{
+background-color:#ffffff;
+cursor:pointer;
+cursor:hand;
+}
+.SaleMakerSelected{
+background-color:#dee4e8;
+cursor:pointer;
+cursor:hand;
+}
+.smallText{
+font-size:9px;
+}
+.specialPrice{
+color:#ff6600;
+}
+.lookupAttention {
+  color: #FF0000;
+}
+.clearBoth {
+	clear:both;
+}
+#loginExpiryPolicy {
+	margin-top: 2em;
+}
+.hiddenField {
+	display: none;
+}
+#alt_nav {
+	padding:20px;
+	font-size:110%;
+	line-height:1.8em;
+}
+#alt_nav h2 {
+	font-size:90%
+}
+#alt_nav p {
+	max-width:600px;
+}
+#alt_nav a {
+	white-space: nowrap;
+}

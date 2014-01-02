@@ -1,0 +1,90 @@
+/*
+use xb settings to make ul/li appear the
+same in mozilla, ie and opera
+*/
+/* needed to keep IE from bubbling events
+from items that are not contained but only
+covered. */
+#navbar{background: #31c9fb; /* Old browsers */
+ul.nde-menu-system{
+background: #31c9fb; /* Old browsers */
+background: -moz-linear-gradient(top,  #31c9fb 0%, #33cbfd 1%, #2cc4f6 2%, #32cafc 3%, #32cafc 4%, #2ec6f8 4%, #34ccfe 5%, #2ec6f8 7%, #34ccfe 8%, #2dc5f7 9%, #2ec6f8 9%, #35cdff 10%, #35cdff 11%, #2ec6f8 12%, #2dc5f7 12%, #35cdff 13%, #2ec6f8 14%, #34ccfe 15%, #2dc5f7 16%, #33c9fc 17%, #30c6f9 19%, #35cbfe 22%, #31c7fa 24%, #35cbfe 25%, #31c9fb 26%, #34ccfe 27%, #31c9fb 29%, #34ccfe 30%, #30c8fa 31%, #34ccfe 32%, #31c9fb 34%, #37cbfb 34%, #33c6f9 35%, #38cbf7 37%, #35c9f1 38%, #36c8f1 38%, #3accf3 39%, #38c8ea 40%, #3ccdec 41%, #3cccee 41%, #38c8ea 42%, #3ec9e8 43%, #3fcae1 46%, #41cadd 47%, #44ccd8 51%, #45cbd4 51%, #46cbd4 53%, #4ccbc4 57%, #4fcbc0 61%, #54ccb1 66%, #54ccb1 68%, #56ccac 68%, #56cbae 69%, #5dcd9d 75%, #5dcd9f 76%, #5fcb97 77%, #60cc98 78%, #64ce8e 81%, #65ce89 85%, #68ce85 85%, #69ce80 88%, #6bcf75 91%, #6ccf75 93%, #6bd16e 94%, #73cb75 95%, #73cb77 96%, #6ecf72 97%, #6ed36d 98%, #6cd16b 99%, #76cb78 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#31c9fb), color-stop(1%,#33cbfd), color-stop(2%,#2cc4f6), color-stop(3%,#32cafc), color-stop(4%,#32cafc), color-stop(4%,#2ec6f8), color-stop(5%,#34ccfe), color-stop(7%,#2ec6f8), color-stop(8%,#34ccfe), color-stop(9%,#2dc5f7), color-stop(9%,#2ec6f8), color-stop(10%,#35cdff), color-stop(11%,#35cdff), color-stop(12%,#2ec6f8), color-stop(12%,#2dc5f7), color-stop(13%,#35cdff), color-stop(14%,#2ec6f8), color-stop(15%,#34ccfe), color-stop(16%,#2dc5f7), color-stop(17%,#33c9fc), color-stop(19%,#30c6f9), color-stop(22%,#35cbfe), color-stop(24%,#31c7fa), color-stop(25%,#35cbfe), color-stop(26%,#31c9fb), color-stop(27%,#34ccfe), color-stop(29%,#31c9fb), color-stop(30%,#34ccfe), color-stop(31%,#30c8fa), color-stop(32%,#34ccfe), color-stop(34%,#31c9fb), color-stop(34%,#37cbfb), color-stop(35%,#33c6f9), color-stop(37%,#38cbf7), color-stop(38%,#35c9f1), color-stop(38%,#36c8f1), color-stop(39%,#3accf3), color-stop(40%,#38c8ea), color-stop(41%,#3ccdec), color-stop(41%,#3cccee), color-stop(42%,#38c8ea), color-stop(43%,#3ec9e8), color-stop(46%,#3fcae1), color-stop(47%,#41cadd), color-stop(51%,#44ccd8), color-stop(51%,#45cbd4), color-stop(53%,#46cbd4), color-stop(57%,#4ccbc4), color-stop(61%,#4fcbc0), color-stop(66%,#54ccb1), color-stop(68%,#54ccb1), color-stop(68%,#56ccac), color-stop(69%,#56cbae), color-stop(75%,#5dcd9d), color-stop(76%,#5dcd9f), color-stop(77%,#5fcb97), color-stop(78%,#60cc98), color-stop(81%,#64ce8e), color-stop(85%,#65ce89), color-stop(85%,#68ce85), color-stop(88%,#69ce80), color-stop(91%,#6bcf75), color-stop(93%,#6ccf75), color-stop(94%,#6bd16e), color-stop(95%,#73cb75), color-stop(96%,#73cb77), color-stop(97%,#6ecf72), color-stop(98%,#6ed36d), color-stop(99%,#6cd16b), color-stop(100%,#76cb78)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #31c9fb 0%,#33cbfd 1%,#2cc4f6 2%,#32cafc 3%,#32cafc 4%,#2ec6f8 4%,#34ccfe 5%,#2ec6f8 7%,#34ccfe 8%,#2dc5f7 9%,#2ec6f8 9%,#35cdff 10%,#35cdff 11%,#2ec6f8 12%,#2dc5f7 12%,#35cdff 13%,#2ec6f8 14%,#34ccfe 15%,#2dc5f7 16%,#33c9fc 17%,#30c6f9 19%,#35cbfe 22%,#31c7fa 24%,#35cbfe 25%,#31c9fb 26%,#34ccfe 27%,#31c9fb 29%,#34ccfe 30%,#30c8fa 31%,#34ccfe 32%,#31c9fb 34%,#37cbfb 34%,#33c6f9 35%,#38cbf7 37%,#35c9f1 38%,#36c8f1 38%,#3accf3 39%,#38c8ea 40%,#3ccdec 41%,#3cccee 41%,#38c8ea 42%,#3ec9e8 43%,#3fcae1 46%,#41cadd 47%,#44ccd8 51%,#45cbd4 51%,#46cbd4 53%,#4ccbc4 57%,#4fcbc0 61%,#54ccb1 66%,#54ccb1 68%,#56ccac 68%,#56cbae 69%,#5dcd9d 75%,#5dcd9f 76%,#5fcb97 77%,#60cc98 78%,#64ce8e 81%,#65ce89 85%,#68ce85 85%,#69ce80 88%,#6bcf75 91%,#6ccf75 93%,#6bd16e 94%,#73cb75 95%,#73cb77 96%,#6ecf72 97%,#6ed36d 98%,#6cd16b 99%,#76cb78 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #31c9fb 0%,#33cbfd 1%,#2cc4f6 2%,#32cafc 3%,#32cafc 4%,#2ec6f8 4%,#34ccfe 5%,#2ec6f8 7%,#34ccfe 8%,#2dc5f7 9%,#2ec6f8 9%,#35cdff 10%,#35cdff 11%,#2ec6f8 12%,#2dc5f7 12%,#35cdff 13%,#2ec6f8 14%,#34ccfe 15%,#2dc5f7 16%,#33c9fc 17%,#30c6f9 19%,#35cbfe 22%,#31c7fa 24%,#35cbfe 25%,#31c9fb 26%,#34ccfe 27%,#31c9fb 29%,#34ccfe 30%,#30c8fa 31%,#34ccfe 32%,#31c9fb 34%,#37cbfb 34%,#33c6f9 35%,#38cbf7 37%,#35c9f1 38%,#36c8f1 38%,#3accf3 39%,#38c8ea 40%,#3ccdec 41%,#3cccee 41%,#38c8ea 42%,#3ec9e8 43%,#3fcae1 46%,#41cadd 47%,#44ccd8 51%,#45cbd4 51%,#46cbd4 53%,#4ccbc4 57%,#4fcbc0 61%,#54ccb1 66%,#54ccb1 68%,#56ccac 68%,#56cbae 69%,#5dcd9d 75%,#5dcd9f 76%,#5fcb97 77%,#60cc98 78%,#64ce8e 81%,#65ce89 85%,#68ce85 85%,#69ce80 88%,#6bcf75 91%,#6ccf75 93%,#6bd16e 94%,#73cb75 95%,#73cb77 96%,#6ecf72 97%,#6ed36d 98%,#6cd16b 99%,#76cb78 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #31c9fb 0%,#33cbfd 1%,#2cc4f6 2%,#32cafc 3%,#32cafc 4%,#2ec6f8 4%,#34ccfe 5%,#2ec6f8 7%,#34ccfe 8%,#2dc5f7 9%,#2ec6f8 9%,#35cdff 10%,#35cdff 11%,#2ec6f8 12%,#2dc5f7 12%,#35cdff 13%,#2ec6f8 14%,#34ccfe 15%,#2dc5f7 16%,#33c9fc 17%,#30c6f9 19%,#35cbfe 22%,#31c7fa 24%,#35cbfe 25%,#31c9fb 26%,#34ccfe 27%,#31c9fb 29%,#34ccfe 30%,#30c8fa 31%,#34ccfe 32%,#31c9fb 34%,#37cbfb 34%,#33c6f9 35%,#38cbf7 37%,#35c9f1 38%,#36c8f1 38%,#3accf3 39%,#38c8ea 40%,#3ccdec 41%,#3cccee 41%,#38c8ea 42%,#3ec9e8 43%,#3fcae1 46%,#41cadd 47%,#44ccd8 51%,#45cbd4 51%,#46cbd4 53%,#4ccbc4 57%,#4fcbc0 61%,#54ccb1 66%,#54ccb1 68%,#56ccac 68%,#56cbae 69%,#5dcd9d 75%,#5dcd9f 76%,#5fcb97 77%,#60cc98 78%,#64ce8e 81%,#65ce89 85%,#68ce85 85%,#69ce80 88%,#6bcf75 91%,#6ccf75 93%,#6bd16e 94%,#73cb75 95%,#73cb77 96%,#6ecf72 97%,#6ed36d 98%,#6cd16b 99%,#76cb78 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #31c9fb 0%,#33cbfd 1%,#2cc4f6 2%,#32cafc 3%,#32cafc 4%,#2ec6f8 4%,#34ccfe 5%,#2ec6f8 7%,#34ccfe 8%,#2dc5f7 9%,#2ec6f8 9%,#35cdff 10%,#35cdff 11%,#2ec6f8 12%,#2dc5f7 12%,#35cdff 13%,#2ec6f8 14%,#34ccfe 15%,#2dc5f7 16%,#33c9fc 17%,#30c6f9 19%,#35cbfe 22%,#31c7fa 24%,#35cbfe 25%,#31c9fb 26%,#34ccfe 27%,#31c9fb 29%,#34ccfe 30%,#30c8fa 31%,#34ccfe 32%,#31c9fb 34%,#37cbfb 34%,#33c6f9 35%,#38cbf7 37%,#35c9f1 38%,#36c8f1 38%,#3accf3 39%,#38c8ea 40%,#3ccdec 41%,#3cccee 41%,#38c8ea 42%,#3ec9e8 43%,#3fcae1 46%,#41cadd 47%,#44ccd8 51%,#45cbd4 51%,#46cbd4 53%,#4ccbc4 57%,#4fcbc0 61%,#54ccb1 66%,#54ccb1 68%,#56ccac 68%,#56cbae 69%,#5dcd9d 75%,#5dcd9f 76%,#5fcb97 77%,#60cc98 78%,#64ce8e 81%,#65ce89 85%,#68ce85 85%,#69ce80 88%,#6bcf75 91%,#6ccf75 93%,#6bd16e 94%,#73cb75 95%,#73cb77 96%,#6ecf72 97%,#6ed36d 98%,#6cd16b 99%,#76cb78 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31c9fb', endColorstr='#76cb78',GradientType=0 ); /* IE6-9 */
+display:block;
+margin:0;
+padding:4px 10px;
+}
+ul.nde-menu-system *{
+font-size:0.9em;
+}
+ul.nde-menu-system li{
+border-right:1px solid #003D00;
+color:#ffffff;
+display:inline;
+font-weight:bold;
+margin:0;
+padding:0 10px;
+position:relative;
+cursor:pointer;
+cursor:hand;
+}
+ul.nde-menu-system li a{
+color:#ffffff;
+font-weight:bold;
+cursor:pointer;
+cursor:hand;
+}
+ul.nde-menu-system li a:hover{
+background-color:transparent;
+color:#ffffff;
+text-decoration:underline;
+}
+ul.nde-menu-system li ul{
+display:block;
+left:0;
+position:absolute;
+top:1em;/* required for NS 7.x/Gecko 1.0.x but not Gecko 1.3 */
+visibility:hidden;
+z-index:1000;
+}
+ul.nde-menu-system li ul li{
+background-color:#f7f7f7;
+border:#a8a8a8 1px solid;
+border-width:0 1px 1px;
+display:block;
+list-style:none;
+margin:0;
+padding:0;
+width:250px;
+}
+ul.nde-menu-system li ul li a{
+/*background-color:#EFF4EA;*/
+background-color:#d4ffbd;
+color:#333;
+display:block;
+font-weight:normal;
+font-family: Verdana,sans-serif;
+font-size: 1em;
+margin:0;
+padding:3px 5px;
+}
+* html ul.nde-menu-system li ul li a{
+width:100%;
+}
+ul.nde-menu-system li ul li a:hover{
+/*background-color:#85C285;*/
+background-color:#31c9fb;
+color:#000;
+text-decoration:none;
+}
+ul.nde-menu-system ul{
+/*background-color:#599659;*/
+display:block;
+margin:0;
+padding:4px 0 0;
+}

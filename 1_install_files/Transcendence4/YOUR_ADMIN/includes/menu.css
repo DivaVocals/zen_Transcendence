@@ -1,0 +1,90 @@
+/*
+use xb settings to make ul/li appear the
+same in mozilla, ie and opera
+*/
+/* needed to keep IE from bubbling events
+from items that are not contained but only
+covered. */
+#navbar{background: #fcdbdc; /* Old browsers */
+ul.nde-menu-system{
+background: #f4bc02; /* Old browsers */
+background: -moz-linear-gradient(top, #f4bc02 0%, #f6df8f 23%, #f8e299 31%, #f6e299 33%, #f7e4a0 36%, #f7e4a0 38%, #fbeec2 58%, #faeec6 59%, #fdf4d7 70%, #fcf6de 73%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4bc02), color-stop(23%,#f6df8f), color-stop(31%,#f8e299), color-stop(33%,#f6e299), color-stop(36%,#f7e4a0), color-stop(38%,#f7e4a0), color-stop(58%,#fbeec2), color-stop(59%,#faeec6), color-stop(70%,#fdf4d7), color-stop(73%,#fcf6de)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f4bc02 0%,#f6df8f 23%,#f8e299 31%,#f6e299 33%,#f7e4a0 36%,#f7e4a0 38%,#fbeec2 58%,#faeec6 59%,#fdf4d7 70%,#fcf6de 73%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f4bc02 0%,#f6df8f 23%,#f8e299 31%,#f6e299 33%,#f7e4a0 36%,#f7e4a0 38%,#fbeec2 58%,#faeec6 59%,#fdf4d7 70%,#fcf6de 73%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f4bc02 0%,#f6df8f 23%,#f8e299 31%,#f6e299 33%,#f7e4a0 36%,#f7e4a0 38%,#fbeec2 58%,#faeec6 59%,#fdf4d7 70%,#fcf6de 73%); /* IE10+ */
+background: linear-gradient(to bottom, #f4bc02 0%,#f6df8f 23%,#f8e299 31%,#f6e299 33%,#f7e4a0 36%,#f7e4a0 38%,#fbeec2 58%,#faeec6 59%,#fdf4d7 70%,#fcf6de 73%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4bc02', endColorstr='#fcf6de',GradientType=0 ); /* IE6-9 */display:block;
+display:block;
+margin:0;
+padding:4px 10px;
+}
+ul.nde-menu-system *{
+font-size:0.9em;
+}
+ul.nde-menu-system li{
+border-right:1px solid #003D00;
+color:#333;
+display:inline;
+font-weight:bold;
+margin:0;
+padding:0 10px;
+position:relative;
+cursor:pointer;
+cursor:hand;
+}
+ul.nde-menu-system li a{
+color:#333;
+font-weight:bold;
+cursor:pointer;
+cursor:hand;
+}
+ul.nde-menu-system li a:hover{
+background-color:transparent;
+color:#333;
+text-decoration:underline;
+}
+ul.nde-menu-system li ul{
+display:block;
+left:0;
+position:absolute;
+top:1em;/* required for NS 7.x/Gecko 1.0.x but not Gecko 1.3 */
+visibility:hidden;
+z-index:1000;
+}
+ul.nde-menu-system li ul li{
+background-color:#f7f7f7;
+border:#a8a8a8 1px solid;
+border-width:0 1px 1px;
+display:block;
+list-style:none;
+margin:0;
+padding:0;
+width:250px;
+}
+ul.nde-menu-system li ul li a{
+/*background-color:#EFF4EA;*/
+background-color:#fcf6de;
+color:#333;
+display:block;
+font-weight:normal;
+font-family: Verdana,sans-serif;
+font-size: 1em;
+margin:0;
+padding:3px 5px;
+}
+* html ul.nde-menu-system li ul li a{
+width:100%;
+}
+ul.nde-menu-system li ul li a:hover{
+/*background-color:#85C285;*/
+background-color:#f4bc02;
+color:#fff;
+text-decoration:none;
+}
+ul.nde-menu-system ul{
+/*background-color:#599659;*/
+display:block;
+margin:0;
+padding:4px 0 0;
+}

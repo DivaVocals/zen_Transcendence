@@ -1,0 +1,51 @@
+Contribution:  Transcendence Series (Admin Templates)
+Version: 1.0
+Zen Cart Version:  v1.5.1
+Original Author: C Jones (http://overthehillweb.com)
+License: under GPL
+Github: https://github.com/DivaVocals/zen_Transcendence
+
+=================================================================================================================================
+Admin interface gets a SIMPLE facelift with this module. New icons & buttons along with some CSS magic gives the Zen-Cart admin section a clean new look! If you prefer CSS buttons, the Transcendence Admin Template also incorporates the "CSS Buttons for Admin" module (http://www.zen-cart.com/downloads.php?do=file&id=1804)
+
+Images and buttons for some of the most of the popular Zen-Cart contributions available from zen-cart.com, Edit Orders, Super Orders and Image Handler are also included.
+
+NOTE: Use at own risk. BACKUP OR RENAME ALL FILES THAT YOU WILL BE REPLACING!
+=================================================================================================================================
+
+Changelog:
+~ Version 1.0 1/2/2013 - Initial release
+
+INSTALLATION:
+(<<<<Backup! Backup! or rename your existing files>>>>)
+================================================================
+
+1. Backup your shop files (As you should before doing anything).
+
+2. Unpack the archive, keeping the folder structure intact. 
+
+3. Copy everything in the "1_install_files/BaseFiles/YOUR_ADMIN" folder to your store's admin folder. (read notes below before replacing the "/YOUR_ADMIN/images/logo.png" and "/YOUR_ADMIN/includes/languages/english.php" files with the one from this package)
+
+4. Choose the admin color scheme you prefer and copy all the files in the "1_install_files/Trancendence_X/YOUR_ADMIN" folder to your store's admin folder (where Trancendence_X = one of the 9 Trancendence choices) JPGs of the various color options are included.
+
+5. Install the SQL Patch. To do this, open up the file "css_buttons_admin_install.sql" in a text editor to copy and paste the file. In your admin panel, open Tools -> Install SQL Patches. Once you have installed the SQL patch, there is an additional configuration item in your admin's Configuration->Layout Settings: Use CSS Buttons (Admin)?. Set the value to false (the default) to disable the CSS-button functionality; set the value to true to enable the functionality.
+
+Notes:
+IF you have NOT uploaded your own company logo to the admin, replace the "/YOUR_ADMIN/images/logo.png" FILE, with your company logo. You must then edit the "/YOUR_ADMIN/includes/languages/english.php" file with your logo file's name, height, & width.
+IF you have uploaded your own company logo to the admin, DO NOT upload the "/YOUR_ADMIN/images/logo.png" or "/YOUR_ADMIN/includes/languages/english.php" files.
+
+
+LICENSE
+:
+This is released under a GNU General Public License (full copy included) which gives you:
+	* the freedom to use the software for any purpose,
+	* the freedom to change the software to suit your needs,
+	* the freedom to share the software with your friends and neighbors, and
+	* the freedom to share the changes you make.
+
+
+DISCLAIMER
+:
+This addon is provided "as-is" with no warranty, support or guarantee it will work. If you are not confident altering your Zen Cart admin system, don't mess with it. Definitely don't mess with a live shop if you haven't got a current backup or know how to restore it.
+
+ENJOY!
