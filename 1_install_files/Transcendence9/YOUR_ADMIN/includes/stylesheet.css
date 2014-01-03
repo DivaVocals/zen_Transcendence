@@ -172,6 +172,17 @@ font-size:1.5em;
 #admin_name, #admin_pass, #old_pwd, #admin_pass2, #admin_email {
 width: 45%;
 }
+
+form#loginForm > fieldset > a {
+color:#fff;
+text-decoration:none;
+}
+
+form#loginForm > fieldset > a:hover{
+color:#fff;
+text-decoration:underline;
+}
+
 /* <<<<<<<<<<<<<<<<< END LOGIN >>>>>>>>>>>>>>>>>>>> */
 
 checkbox,input,radio,select,textarea,file{
