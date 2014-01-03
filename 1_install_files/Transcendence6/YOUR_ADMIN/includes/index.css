@@ -30,7 +30,7 @@ background: -webkit-linear-gradient(top,  #8d2132 0%,#8d2132 35%,#893843 62%,#ce
 background: -o-linear-gradient(top,  #8d2132 0%,#8d2132 35%,#893843 62%,#ce7993 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top,  #8d2132 0%,#8d2132 35%,#893843 62%,#ce7993 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #8d2132 0%,#8d2132 35%,#893843 62%,#ce7993 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d2132', endColorstr='#ce7993',GradientType=0 ); /* IE6-9 */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d2132', endColorstr='#ce7993',GradientType=0 );*/ /* IE6-9 */
 -moz-border-radius: .5em .5em 0 0;
 -webkit-border-radius: .5em .5em 0 0;
 border-radius: .5em .5em 0 0;

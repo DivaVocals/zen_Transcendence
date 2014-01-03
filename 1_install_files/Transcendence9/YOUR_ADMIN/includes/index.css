@@ -30,7 +30,7 @@ background: -webkit-linear-gradient(top, #686868 0%,#656565 5%,#5b5b5b 13%,#5858
 background: -o-linear-gradient(top, #686868 0%,#656565 5%,#5b5b5b 13%,#585858 18%,#525252 21%,#515151 23%,#424242 33%,#3e3e3e 38%,#383838 41%,#323232 49%,#313131 51%,#343434 59%,#323232 62%,#323232 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #686868 0%,#656565 5%,#5b5b5b 13%,#585858 18%,#525252 21%,#515151 23%,#424242 33%,#3e3e3e 38%,#383838 41%,#323232 49%,#313131 51%,#343434 59%,#323232 62%,#323232 100%); /* IE10+ */
 background: linear-gradient(to bottom, #686868 0%,#656565 5%,#5b5b5b 13%,#585858 18%,#525252 21%,#515151 23%,#424242 33%,#3e3e3e 38%,#383838 41%,#323232 49%,#313131 51%,#343434 59%,#323232 62%,#323232 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#323232',GradientType=0 ); /* IE6-9 */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#323232',GradientType=0 );*/ /* IE6-9 */
 -moz-border-radius: .5em .5em 0 0;
 -webkit-border-radius: .5em .5em 0 0;
 border-radius: .5em .5em 0 0;

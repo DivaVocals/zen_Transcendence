@@ -5,7 +5,7 @@ same in mozilla, ie and opera
 /* needed to keep IE from bubbling events
 from items that are not contained but only
 covered. */
-#navbar{background: #3b679e; /* Old browsers */
+#navbar{background: #3b679e; /* Old browsers */}
 ul.nde-menu-system{
 background: #3b679e; /* Old browsers */
 background: -moz-linear-gradient(top, #3b679e 0%, #207cca 36%, #2b88d9 53%, #7db9e8 100%); /* FF3.6+ */
@@ -14,7 +14,7 @@ background: -webkit-linear-gradient(top, #3b679e 0%,#207cca 36%,#2b88d9 53%,#7db
 background: -o-linear-gradient(top, #3b679e 0%,#207cca 36%,#2b88d9 53%,#7db9e8 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #3b679e 0%,#207cca 36%,#2b88d9 53%,#7db9e8 100%); /* IE10+ */
 background: linear-gradient(to bottom, #3b679e 0%,#207cca 36%,#2b88d9 53%,#7db9e8 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 );*/ /* IE6-9 */
 display:block;
 margin:0;
 padding:4px 10px;
