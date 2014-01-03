@@ -7,12 +7,9 @@
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: stylesheet.css 19301 2011-07-28 21:50:05Z kuroi $
  */
-/* Main background colors - #8d2132 & #ce7993; */
+/* Main background colors - #fcdbdc & #ed1c24; */
 @import url("menu.css");/* including stylesheet for dhtml menu */
 @import url("index.css");/* including stylesheet for index.php */
-/* <<<<<<<<<<<<<<<<< Begin CSS Buttons >>>>>>>>>>>>>>>>>>>> */
-@import url("stylesheet_admin_css_buttons.css");
-/* <<<<<<<<<<<<<<<<< End CSS Buttons >>>>>>>>>>>>>>>>>>>> */
 a{
 color:#0000ff;
 text-decoration:none;
@@ -126,14 +123,14 @@ body#login fieldset{
 margin:0 auto;
 padding:30px;
 width:600px;
-background: #8d2132; /* Old browsers */
-background: -moz-linear-gradient(top,  #8d2132 0%, #8d2132 35%, #893843 62%, #ce7993 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8d2132), color-stop(35%,#8d2132), color-stop(62%,#893843), color-stop(100%,#ce7993)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #8d2132 0%,#8d2132 35%,#893843 62%,#ce7993 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #8d2132 0%,#8d2132 35%,#893843 62%,#ce7993 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #8d2132 0%,#8d2132 35%,#893843 62%,#ce7993 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #8d2132 0%,#8d2132 35%,#893843 62%,#ce7993 100%); /* W3C */
-/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d2132', endColorstr='#ce7993',GradientType=0 );*/ /* IE6-9 */
+background: #fc5558; /* Old browsers */
+background: -moz-linear-gradient(top,  #fcdbdc 0%, #ff9999 35%, #fc5558 67%, #ed1c24 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcdbdc), color-stop(35%,#ff9999), color-stop(67%,#fc5558), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fcdbdc 0%,#ff9999 35%,#fc5558 67%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fcdbdc 0%,#ff9999 35%,#fc5558 67%,#ed1c24 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fcdbdc 0%,#ff9999 35%,#fc5558 67%,#ed1c24 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fcdbdc 0%,#ff9999 35%,#fc5558 67%,#ed1c24 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcdbdc', endColorstr='#ed1c24',GradientType=0 );*/ /* IE6-9 */
 -moz-border-radius: .5em 4em .5em 4em;
 -webkit-border-radius: .5em 4em .5em 4em;
 border-radius: .5em 4em .5em 4em;
@@ -154,9 +151,9 @@ border:0px solid #fff;
 }
 
 body#login legend{
-background:#8d2132;
-border:1px solid #ce7993;
-color:#fff;
+background:#fcdbdc;
+border:1px solid #ed1c24;
+color:#333;
 font-size:90%;
 padding:0.2em 0.5em;
 text-align:right;
@@ -337,7 +334,7 @@ font-weight:bold;
 }
 .headerBar{
 /*background-color:#003D00;*/
-background-color:#ce7993;
+background-color:#ed1c24;
 }
 .headerBarContent{
 color:#ffffff;
@@ -350,7 +347,7 @@ color:#333333;
 }
 .infoBoxHeading{
 /*background-color:#003D00;*/
-background-color:#ce7993;
+background-color:#ed1c24;
 color:#ffffff;
 }
 .main{
@@ -378,7 +375,7 @@ text-decoration:line-through;
 }
 h1,.pageHeading{
 /*color:#003D00;*/ /*727272*/
-color:#ce7993;
+color:#ed1c24;
 font-size:16px;
 font-variant:small-caps;
 font-weight:bold;
@@ -428,3 +425,7 @@ color:#ff6600;
 #alt_nav a {
 	white-space: nowrap;
 }
+
+/* <<<<<<<<<<<<<<<<< Begin CSS Buttons >>>>>>>>>>>>>>>>>>>> */
+@import url("stylesheet_admin_css_buttons.css");
+/* <<<<<<<<<<<<<<<<< End CSS Buttons >>>>>>>>>>>>>>>>>>>> */

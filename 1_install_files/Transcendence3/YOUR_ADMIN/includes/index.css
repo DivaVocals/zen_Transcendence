@@ -23,7 +23,7 @@ clear:both;
 color:#ffffff;
 font-weight:bold;
 padding:3px;
-background: #e3f7e8; /* Old browsers */
+background: #90c13f; /* Old browsers */
 background: -moz-linear-gradient(top, #e3f7e8 0%, #bfd39e 35%, #90c13f 69%, #007f24 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3f7e8), color-stop(35%,#bfd39e), color-stop(69%,#90c13f), color-stop(100%,#007f24)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #e3f7e8 0%,#bfd39e 35%,#90c13f 69%,#007f24 100%); /* Chrome10+,Safari5.1+ */

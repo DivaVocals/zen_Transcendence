@@ -23,7 +23,7 @@ clear:both;
 color:#333;
 font-weight:bold;
 padding:3px;
-background: #f4bc02; /* Old browsers */
+background: #f6df8f; /* Old browsers */
 background: -moz-linear-gradient(top, #f4bc02 0%, #f6df8f 23%, #f8e299 31%, #f6e299 33%, #f7e4a0 36%, #f7e4a0 38%, #fbeec2 58%, #faeec6 59%, #fdf4d7 70%, #fcf6de 73%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4bc02), color-stop(23%,#f6df8f), color-stop(31%,#f8e299), color-stop(33%,#f6e299), color-stop(36%,#f7e4a0), color-stop(38%,#f7e4a0), color-stop(58%,#fbeec2), color-stop(59%,#faeec6), color-stop(70%,#fdf4d7), color-stop(73%,#fcf6de)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #f4bc02 0%,#f6df8f 23%,#f8e299 31%,#f6e299 33%,#f7e4a0 36%,#f7e4a0 38%,#fbeec2 58%,#faeec6 59%,#fdf4d7 70%,#fcf6de 73%); /* Chrome10+,Safari5.1+ */

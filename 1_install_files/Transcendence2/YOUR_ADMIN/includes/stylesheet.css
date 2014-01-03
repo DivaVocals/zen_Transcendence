@@ -10,7 +10,9 @@
 /* Main background colors - #3b679e & #7db9e8; */
 @import url("menu.css");/* including stylesheet for dhtml menu */
 @import url("index.css");/* including stylesheet for index.php */
+/* <<<<<<<<<<<<<<<<< Begin CSS Buttons >>>>>>>>>>>>>>>>>>>> */
 @import url("stylesheet_admin_css_buttons.css");
+/* <<<<<<<<<<<<<<<<< End CSS Buttons >>>>>>>>>>>>>>>>>>>> */
 a{
 color:#0000ff;
 text-decoration:none;
@@ -45,7 +47,7 @@ color:#ffffff;
 font-weight:bold;
 text-decoration:none;
 }
-a.menuBoxContentLink:link{
+a.menuBoxContentLink:link, td.main a:link{
 color:#0000ff;
 text-decoration:none;
 }
@@ -53,7 +55,7 @@ a.menuBoxContentLink:visited{
 color:#0000ff;
 text-decoration:none;
 }
-a.menuBoxContentLink:hover{
+a.menuBoxContentLink:hover, td.main a:hover{
 color:#0000ff;
 text-decoration:underline;
 }
@@ -124,7 +126,7 @@ body#login fieldset{
 margin:0 auto;
 padding:30px;
 width:600px;
-background: #3b679e; /* Old browsers */
+background: #207cca; /* Old browsers */
 background: -moz-linear-gradient(top, #3b679e 0%, #207cca 36%, #2b88d9 53%, #7db9e8 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b679e), color-stop(36%,#207cca), color-stop(53%,#2b88d9), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #3b679e 0%,#207cca 36%,#2b88d9 53%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
@@ -135,6 +137,9 @@ background: linear-gradient(to bottom, #3b679e 0%,#207cca 36%,#2b88d9 53%,#7db9e
 -moz-border-radius: .5em 4em .5em 4em;
 -webkit-border-radius: .5em 4em .5em 4em;
 border-radius: .5em 4em .5em 4em;
+-webkit-box-shadow: 8px 8px 12px #ccc;
+-moz-box-shadow: 8px 8px 12px #ccc;
+box-shadow: 8px 8px 12px #ccc;
 border:0px solid #fff;
 }
 
@@ -182,39 +187,6 @@ form{
 display:inline;
 }
 
-/* <<<<<<<<<<<<<<<<< CSS Buttons >>>>>>>>>>>>>>>>>>>> */
-/*.button, input.button, input[type=button] {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-moz-border-radius:30px;
-	-webkit-border-radius:30px;
-	border-radius:30px;
-	display:inline-block;
-	font-family:Verdana, Helvetica, Tahoma, Arial, sans-serif;
-	font-size:12px;
-	font-weight:bold;
-	margin: 0;
-	padding:2px 8px;
-	text-decoration:none;
-}
-.button, input.button, input[type=button] {
-	background-color:#E8E8E8;  /* Submit button background color */
-	border: 1px solid #B7B7B7;  /* Submit button border color */
-	font-size: 12px;
-	font-weight: bold;
-	display: inline-block;
-	margin: 0;
-	padding:2px 8px;
-	color: #333;  /* Text color for submit buttons */
-}
-.button:hover, input.button:hover, input[type=button]:hover {
-	background-color:#cdd1d4;  /* Hover color for the submit buttons */
-	border: 1px solid #B7B7B7;  /* Submit button border color */
-	color:#333;  /* Text color for the submit buttons */
-	cursor: pointer;
-}*/
-/* <<<<<<<<<<<<<<<<< END >>>>>>>>>>>>>>>>>>>> */
 
 span.dataTableHeadingContentWhois{
 color:#ff6600;

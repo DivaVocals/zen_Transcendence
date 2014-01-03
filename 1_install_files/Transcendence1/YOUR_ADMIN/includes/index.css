@@ -23,7 +23,7 @@ clear:both;
 color:#ffffff;
 font-weight:bold;
 padding:3px;
-background: #fcdbdc; /* Old browsers */
+background: #fc5558; /* Old browsers */
 background: -moz-linear-gradient(top,  #fcdbdc 0%, #ff9999 35%, #fc5558 67%, #ed1c24 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcdbdc), color-stop(35%,#ff9999), color-stop(67%,#fc5558), color-stop(100%,#ed1c24)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top,  #fcdbdc 0%,#ff9999 35%,#fc5558 67%,#ed1c24 100%); /* Chrome10+,Safari5.1+ */
