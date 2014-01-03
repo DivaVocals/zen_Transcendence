@@ -14,7 +14,7 @@
 @import url("stylesheet_admin_css_buttons.css");
 /* <<<<<<<<<<<<<<<<< End CSS Buttons >>>>>>>>>>>>>>>>>>>> */
 a{
-color:#fff;
+color:#0000ff;
 text-decoration:none;
 }
 a.contentlink, span.left a, td.infoBoxContent a, td.smallText a, td.dataTableContent a, div.warrantyrow a{
@@ -24,7 +24,7 @@ a,body,html,table{
 font:normal normal 0.95em Verdana,sans-serif;
 }
 a:hover{
-color:#fff;
+color:#0000ff;
 text-decoration:underline;
 }
 a.headerLink:link{
