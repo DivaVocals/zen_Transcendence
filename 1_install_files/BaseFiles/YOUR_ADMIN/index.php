@@ -48,7 +48,6 @@
 <?php require(DIR_WS_INCLUDES . 'header.php'); ?>
 <!-- header_eof //-->
  <?php
-
   $customers = $db->Execute("select count(*) as count from " . TABLE_CUSTOMERS);
 
   $products = $db->Execute("select count(*) as count from " . TABLE_PRODUCTS . " where products_status = '1'");
@@ -129,7 +128,7 @@
   while (!$customers->EOF) {
     $customers->fields['customers_firstname'] = zen_output_string_protected($customers->fields['customers_firstname']);
     $customers->fields['customers_lastname'] = zen_output_string_protected($customers->fields['customers_lastname']);
-    echo '              <div class="row"><span class="left"><a href="' . zen_href_link(FILENAME_CUSTOMERS, 'search=' . $customers->fields['customers_email_address'] . '&origin=' . FILENAME_DEFAULT, 'NONSSL') . '" class="contentlink">'. $customers->fields['customers_firstname'] . ' ' . $customers->fields['customers_lastname'] . '</a></span><span class="rigth">' . "\n";
+    echo '              <div class="row"><span class="left"><a href="' . zen_href_link(FILENAME_CUSTOMERS, 'search=' . $customers->fields['customers_email_address'] . '&origin=' . FILENAME_DEFAULT, 'NONSSL') . '" class="contentlink">'. $customers->fields['customers_firstname'] . ' ' . $customers->fields['customers_lastname'] . '</a></span>' . "\n";
     echo zen_date_short($customers->fields['customers_info_date_account_created']);
     echo '              </span></div>' . "\n";
     $customers->MoveNext();
