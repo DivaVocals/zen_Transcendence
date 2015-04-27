@@ -1,4 +1,4 @@
-Transcendence Series (Admin Templates) v1.1
+Transcendence Series (Admin Templates) v1.2
 ============
 
 ## This is a development version of Transcendence Series (Admin Templates) only
