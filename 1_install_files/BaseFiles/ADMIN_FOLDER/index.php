@@ -81,23 +81,23 @@
 <div class="header"><img src="images/indx_icon_generic.png" width="38" height="32" /><?php echo BOX_TITLE_STATISTICS; ?> </div>
  <!-- EOF Trancendence -->
 <?php
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_COUNTER_DATE . '</span><span class="rigth"> ' . $counter_startdate_formatted . '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_COUNTER . '</span><span class="rigth"> ' . $counter->fields['counter'] . '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_CUSTOMERS . '</span><span class="rigth"> ' . $customers->fields['count'] . '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_PRODUCTS . ' </span><span class="rigth">' . $products->fields['count'] . '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_PRODUCTS_OFF . ' </span><span class="rigth">' . $products_off->fields['count'] . '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_REVIEWS . '</span><span class="rigth">' . $reviews->fields['count']. '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_COUNTER_DATE . '</span><span class="right"> ' . $counter_startdate_formatted . '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_COUNTER . '</span><span class="right"> ' . $counter->fields['counter'] . '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_CUSTOMERS . '</span><span class="right"> ' . $customers->fields['count'] . '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_PRODUCTS . ' </span><span class="right">' . $products->fields['count'] . '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_PRODUCTS_OFF . ' </span><span class="right">' . $products_off->fields['count'] . '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_REVIEWS . '</span><span class="right">' . $reviews->fields['count']. '</span></div>';
     if (REVIEWS_APPROVAL=='1') {
-    echo '<div class="row"><span class="left"><a href="' . zen_href_link(FILENAME_REVIEWS, 'status=1', 'NONSSL') . '">' . BOX_ENTRY_REVIEWS_PENDING . '</a></span><span class="rigth">' . $reviews_pending->fields['count']. '</span></div>';
+    echo '<div class="row"><span class="left"><a href="' . zen_href_link(FILENAME_REVIEWS, 'status=1', 'NONSSL') . '">' . BOX_ENTRY_REVIEWS_PENDING . '</a></span><span class="right">' . $reviews_pending->fields['count']. '</span></div>';
     }
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_NEWSLETTERS . '</span><span class="rigth"> ' . $newsletters->fields['count']. '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_NEWSLETTERS . '</span><span class="right"> ' . $newsletters->fields['count']. '</span></div>';
 
-  echo '<br /><div class="row"><span class="left">' . BOX_ENTRY_SPECIALS_EXPIRED . '</span><span class="rigth"> ' . $specials->fields['count']. '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_SPECIALS_ACTIVE . '</span><span class="rigth"> ' . $specials_act->fields['count']. '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_FEATURED_EXPIRED . '</span><span class="rigth"> ' . $featured->fields['count']. '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_FEATURED_ACTIVE . '</span><span class="rigth"> ' . $featured_act->fields['count']. '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_SALEMAKER_EXPIRED . '</span><span class="rigth"> ' . $salemaker->fields['count']. '</span></div>';
-  echo '<div class="row"><span class="left">' . BOX_ENTRY_SALEMAKER_ACTIVE . '</span><span class="rigth"> ' . $salemaker_act->fields['count']. '</span></div>';
+  echo '<br /><div class="row"><span class="left">' . BOX_ENTRY_SPECIALS_EXPIRED . '</span><span class="right"> ' . $specials->fields['count']. '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_SPECIALS_ACTIVE . '</span><span class="right"> ' . $specials_act->fields['count']. '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_FEATURED_EXPIRED . '</span><span class="right"> ' . $featured->fields['count']. '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_FEATURED_ACTIVE . '</span><span class="right"> ' . $featured_act->fields['count']. '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_SALEMAKER_EXPIRED . '</span><span class="right"> ' . $salemaker->fields['count']. '</span></div>';
+  echo '<div class="row"><span class="left">' . BOX_ENTRY_SALEMAKER_ACTIVE . '</span><span class="right"> ' . $salemaker_act->fields['count']. '</span></div>';
 
 ?>
  </div>
@@ -111,7 +111,7 @@
   while (!$orders_status->EOF) {
     $orders_pending = $db->Execute("select count(*) as count from " . TABLE_ORDERS . " where orders_status = '" . $orders_status->fields['orders_status_id'] . "'");
 
-    $orders_contents .= '<div class="row"><span class="left"><a href="' . zen_href_link(FILENAME_ORDERS, 'selected_box=customers&status=' . $orders_status->fields['orders_status_id'], 'NONSSL') . '">' . $orders_status->fields['orders_status_name'] . '</a>:</span><span class="rigth"> ' . $orders_pending->fields['count'] . '</span>   </div>';
+    $orders_contents .= '<div class="row"><span class="left"><a href="' . zen_href_link(FILENAME_ORDERS, 'selected_box=customers&status=' . $orders_status->fields['orders_status_id'], 'NONSSL') . '">' . $orders_status->fields['orders_status_name'] . '</a>:</span><span class="right"> ' . $orders_pending->fields['count'] . '</span>   </div>';
     $orders_status->MoveNext();
   }
 
@@ -143,14 +143,14 @@
   $counter = $db->Execute($counter_query);
 ?>
  <!-- BOF Trancendence -->
-   <div class="header"><img src="images/indx_icon_week_f2.png" width="38" height="32" /><?php echo sprintf(LAST_10_DAYS, $counter->RecordCount()); ?><?php echo '<span class="rigth"> &nbsp;&nbsp;&nbsp;' . SESSION . ' - ' . TOTAL . '</span>'; ?></div>
+   <div class="header"><img src="images/indx_icon_week_f2.png" width="38" height="32" /><?php echo sprintf(LAST_10_DAYS, $counter->RecordCount()); ?><?php echo '<span class="right"> &nbsp;&nbsp;&nbsp;' . SESSION . ' - ' . TOTAL . '</span>'; ?></div>
  <!-- EOF Trancendence -->
   <?php
 
   while (!$counter->EOF) {
     $counter_startdate = $counter->fields['startdate'];
     $counter_startdate_formatted = strftime(DATE_FORMAT_SHORT, mktime(0, 0, 0, substr($counter_startdate, 4, 2), substr($counter_startdate, -2), substr($counter_startdate, 0, 4)));
-    echo '              <div class="row"><span class="left">' . $counter_startdate_formatted . '</span><span class="rigth"> ' . $counter->fields['session_counter'] . ' - ' . $counter->fields['counter'] . '</span>   </div>' . "\n";
+    echo '              <div class="row"><span class="left">' . $counter_startdate_formatted . '</span><span class="right"> ' . $counter->fields['session_counter'] . ' - ' . $counter->fields['counter'] . '</span>   </div>' . "\n";
     $counter->MoveNext();
   }
 ?>
@@ -165,7 +165,7 @@
   <?php  $orders = $db->Execute("select o.orders_id as orders_id, o.customers_name as customers_name, o.customers_id, o.date_purchased as date_purchased, o.currency, o.currency_value, ot.class, ot.text as order_total from " . TABLE_ORDERS . " o left join " . TABLE_ORDERS_TOTAL . " ot on (o.orders_id = ot.orders_id and class = 'ot_total') order by orders_id DESC limit 5");
 
   while (!$orders->EOF) {
-    echo '              <div class="row"><span class="left"><a href="' . zen_href_link(FILENAME_ORDERS, 'oID=' . $orders->fields['orders_id'] . '&origin=' . FILENAME_DEFAULT, 'NONSSL') . '" class="contentlink"> ' . $orders->fields['customers_name'] . '</a></span><span class="center">' . $orders->fields['order_total'] . '</span><span class="rigth">' . "\n";
+    echo '              <div class="row"><span class="left"><a href="' . zen_href_link(FILENAME_ORDERS, 'oID=' . $orders->fields['orders_id'] . '&origin=' . FILENAME_DEFAULT, 'NONSSL') . '" class="contentlink"> ' . $orders->fields['customers_name'] . '</a></span><span class="center">' . $orders->fields['order_total'] . '</span><span class="right">' . "\n";
     echo zen_date_short($orders->fields['date_purchased']);
     echo '              </span></div>' . "\n";
     $orders->MoveNext();
