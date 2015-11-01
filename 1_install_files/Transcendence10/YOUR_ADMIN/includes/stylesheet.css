@@ -114,7 +114,6 @@ margin:0;
 body#login{
 margin-top:100px;
 text-align:center;
-color:#ffffff;
 }
 
 body#login .button{
@@ -154,6 +153,7 @@ border:0px solid #fff;
 	text-align: right;
 	line-height: 1.5;
 	font-weight: bold;
+	color:#fff;
 }
 
 body#login legend{
@@ -174,6 +174,16 @@ font-size:1.5em;
 #admin_name, #admin_pass, #old_pwd, #admin_pass2, #admin_email {
 width: 45%;
 }
+form#loginForm > fieldset > a {
+color:#fff;
+text-decoration:none;
+}
+
+form#loginForm > fieldset > a:hover{
+color:#fff;
+text-decoration:underline;
+}
+
 /* <<<<<<<<<<<<<<<<< END LOGIN >>>>>>>>>>>>>>>>>>>> */
 
 checkbox,input,radio,select,textarea,file{
@@ -346,6 +356,9 @@ background-color:#4d2365;
 color:#ffffff;
 font-weight:bold;
 padding:2px;
+}
+.headerBarTimeDate {
+    text-align: left !important;
 }
 .infoBoxContent{
 background-color:#e7e6e0;

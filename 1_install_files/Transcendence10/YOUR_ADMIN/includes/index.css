@@ -61,7 +61,8 @@ div.row{
 background:#f7f6ef;
 clear:both;
 margin-top:1px;
-padding:3px;
+padding:5px;
+height: 15px;
 }
 div.row span.center{
 margin-right:30px;

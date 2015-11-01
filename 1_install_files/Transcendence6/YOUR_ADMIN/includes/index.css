@@ -41,20 +41,26 @@ div.header a{
 font-weight:bold;
 }
 div.reportBox{
-/*background:#d7d6cc;*/
-background-color:#ce7993;
+/*background:#d7d6cc;
+background-color:#ce7993;*/
 -moz-border-radius: .5em .5em 0 0;
 -webkit-border-radius: .5em .5em 0 0;
 border-radius: .5em .5em 0 0;
 /*border:1px solid #d7d6cc;*/
 border:1px solid #ce7993;
 margin-top:1em;
+overflow:auto;
+padding-bottom:12px;
+}
+div#coltwo div.reportBox{
+background-color:#ffffff;
 }
 div.row{
 background:#f7f6ef;
 clear:both;
 margin-top:1px;
-padding:3px;
+padding:5px;
+height: 15px;
 }
 div.row span.center{
 margin-right:30px;
@@ -62,13 +68,19 @@ margin-right:30px;
 div.row span.left{
 float:left;
 text-align:left;
-width:74%;
+width:56%;
 }
 div.row span.right{
 float:right;
-text-align:right;
-width:34%;
+text-align: right;
+/*width: 26%;*/
+margin-left: 2em;
 }
+
+/*div.reportBox {display:table;width: 100%;}
+div.row {display:table-row;}
+div.row span.left, div.row span.right {display:table-cell;}*/
+
 div.warrantyrow{
 background:#ffffff;
 clear:both;
@@ -79,7 +91,7 @@ text-align:center;
 display:inline;
 float:left;
 padding-top:.25em;
-width:32%;
+width:30%;
 }
 #colone{
 margin-left:5px;

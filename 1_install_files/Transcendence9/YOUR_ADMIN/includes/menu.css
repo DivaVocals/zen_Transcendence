@@ -20,7 +20,7 @@ margin:0;
 padding:4px 10px;
 }
 ul.nde-menu-system *{
-font-size:0.9em;
+/*font-size:0.9em;*/
 }
 ul.nde-menu-system li{
 border-right:1px solid #003D00;

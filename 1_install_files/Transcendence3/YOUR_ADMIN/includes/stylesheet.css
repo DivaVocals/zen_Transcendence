@@ -151,6 +151,7 @@ border:0px solid #fff;
 	text-align: right;
 	line-height: 1.5;
 	font-weight: bold;
+	color:#fff;
 }
 
 body#login legend{
@@ -353,6 +354,9 @@ background-color:#007F24;
 color:#ffffff;
 font-weight:bold;
 padding:2px;
+}
+.headerBarTimeDate {
+    text-align: left !important;
 }
 .infoBoxContent{
 background-color:#e7e6e0;
